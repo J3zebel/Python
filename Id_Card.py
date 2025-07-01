@@ -1,0 +1,11 @@
+name = input("Enter your Name:")
+dob = input("Enter Your DOB:")
+phno = input("Enter Your PhNo:")
+email = input("Enter Your E-mail:")
+
+print("----------------------------")
+print("NAME  :" +name )
+print("DOB   :" +dob  )
+print("PhNo  :" +phno )
+print("EMAIL :" +email)
+print("----------------------------")
