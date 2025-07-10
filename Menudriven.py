@@ -1,0 +1,5 @@
+print("1.Login")
+print("2.Register")
+print("3.Dashboard")
+print("4.Exit")
+n = input("Choose any one from above:")
