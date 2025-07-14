@@ -1,3 +1,4 @@
+#String Methods
 course = "Python Programming"
 print(course.upper())           # converts all characters in a string to uppercase. 
 print(course.lower())           # converts all characters in a string to lowercase. 
@@ -25,6 +26,8 @@ course = "Python Programming"
 print("Python" in course)       #in checks if a substring is present.
 print("swift" not in course)    #not in checks if a substring is *not* present.
 
+# String Indexing and Slicing
+
 name = "Alice"
 print(name[0])      #indexing-get individual characters
 print(name[-1])
@@ -39,6 +42,8 @@ print(course[:])    #A copy of the entire string
 text = "Hello"
 print(len(text))        #number of characters in a string
 
+#Escape Sequences
+
 message = "Python \"Programming\" is fun."   #To include a double quote inside a double-quoted string.
 print(message)
 
@@ -50,6 +55,8 @@ print(path)
 
 multiline = "Hello\nWorld"                  #For a new line. 
 print(multiline)
+
+#Formatted Strings (f-strings)
 
 #Formatted strings offer a super clean and modern way to embed variables 
 #and expressions directly into string literals. You just put an f (or F) before the opening quote. 
@@ -64,6 +71,8 @@ y = 3
 calculation = f"The sum of {x} and {y} is {x + y}."
 print(calculation)
 
+#Number Types
+
 integer_num = 10
 float_num = 3.14
 complex_num = 1 + 2j
@@ -71,7 +80,7 @@ print(type(integer_num))
 print(type(float_num))
 print(type(complex_num))        # Numbers in the form a+bj
 
-
+#Arithmetic Operators
 
 print(10 + 3)
 print(10 - 3)
@@ -81,3 +90,19 @@ print(10 // 3)      #returns an integer
 print(10 % 3)
 print(10 ** 3)      #left to the power of right
         
+#Augmented Assignment Operators
+
+x = 10
+x += 3          #Same as x = x + 3
+print(x)
+
+y = 20
+y /= 4          #Same as y = y / 4
+print(y)
+
+
+#Built-in Functions for Numbers
+
+print(round(2.9))       # Rounds a number to the nearest integer.
+print(abs(-2.9))        # Returns the absolute value of a number (+ve only)
+
