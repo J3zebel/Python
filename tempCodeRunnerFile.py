@@ -1,1 +1,2 @@
-    mul = num * i
+
+user = User("Swathi","swathi@gmail.com","swathi@123")
