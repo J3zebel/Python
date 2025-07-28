@@ -102,3 +102,16 @@ for i in range (n):                         #diamond
     print()
 
 
+myDict = {x: x**2 for x in [1,2,3,4,5]}
+print(myDict)
+
+list1 = [1, 2, 4, 5, 6]
+Tuple = tuple(list1)
+print("\nTuple using List:", Tuple)
+
+Set = set([1, 2, 'Geeks', 4, 'For', 6, 'Geeks'])
+print("\nElements of set: ") 
+for i in Set: 
+    print(i) 
+print()
+

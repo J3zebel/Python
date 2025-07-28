@@ -50,6 +50,18 @@ class Transaction(Ab):
 
 class Bank(Transaction):
     def __init__(self):
-        pass
-    
+        self.depo = 8000 
+        self.withdr = 1080
+    def Checkpassowrd(self):
+        return self.getPassword
+    def Createnewuser(self):
+        return User
+    def setdeposit(self,depo):
+        self.depo = depo
+    def getdeposit(self):
+        return self.depo
+    def setwithdraw(self,withdr):
+        self.withdr = withdr
+    def getwithdraw(self):
+        return self.withdr
 

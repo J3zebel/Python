@@ -1,4 +1,4 @@
-from Bank import User
+from Bank import User,Bank
 
 def checkuser(users):
     email = input("Enter email:")
@@ -7,13 +7,14 @@ def checkuser(users):
         if i.getEmailId() == email and i.getPassword() == password:
             print(i.getusername())
         
-def checkpassword(users):
-    password = input("Enter password:")
-    for i in users:
-        if i.getPassword() == password:
-            print("valid password")
-        else:
-            print("Invalid password")
+def createuser():
+    name = input("Enter username: ")
+    email = input("Enter email: ")
+    password = input("Enter password: ")
+    new_user = User(name, email, password)
+    print("You are registered")
+    return new_user
+
 
 
 def main():
@@ -30,7 +31,9 @@ def main():
     print(users)
 
     checkuser(users)
-    checkpassword(users)
+    new_user = createuser()
+    users.append(new_user)
+
     
 
 if __name__ == "__main__":
